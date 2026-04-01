@@ -107,10 +107,11 @@ const Hero = () => {
                 }}>
                     <a 
                         href="#menu" 
-                        className="px-6 py-3 md:px-10 md:py-4 border border-primary text-primary font-bold rounded-full hover:bg-glass hover:text-white transition-all duration-300"
+                        className="px-10 py-4 border border-primary text-primary font-bold rounded-full hover:bg-glass hover:text-white transition-all duration-300"
                         style={{
                             border: '1px solid #FFB800',
                             color: '#FFB800',
+                            padding: '1rem 2.5rem',
                             borderRadius: '9999px',
                             fontWeight: 'bold'
                         }}
@@ -119,10 +120,11 @@ const Hero = () => {
                     </a>
                     <a 
                         href="#about" 
-                        className="px-6 py-3 md:px-10 md:py-4 border border-primary text-primary font-bold rounded-full hover:bg-glass hover:text-white transition-all duration-300"
+                        className="px-10 py-4 border border-primary text-primary font-bold rounded-full hover:bg-glass hover:text-white transition-all duration-300"
                         style={{
                             border: '1px solid #FFB800',
                             color: '#FFB800',
+                            padding: '1rem 2.5rem',
                             borderRadius: '9999px',
                             fontWeight: 'bold'
                         }}

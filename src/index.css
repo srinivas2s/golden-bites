@@ -64,34 +64,7 @@ button {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 1.5rem;
-  }
-  
-  .section-padding {
-    padding: 60px 0 !important;
-  }
-
-  h1 {
-    font-size: clamp(2.5rem, 8vw, 4rem) !important;
-    line-height: 1.1 !important;
-  }
-
-  h2 {
-    font-size: clamp(2rem, 6vw, 3rem) !important;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
-
-  .subtitle {
-    font-size: 0.75rem !important;
-  }
-
-  /* Make logo smaller on mobile */
-  .logo-img {
-    width: 4rem !important;
-    height: 4rem !important;
+    padding: 0 1rem;
   }
 }
 
