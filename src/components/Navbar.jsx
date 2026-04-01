@@ -23,7 +23,11 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-4 glass-morphism' : 'py-6 bg-transparent'}`}>
-            <div className="container flex items-center justify-between mx-auto">
+            <div className="container flex items-center justify-between mx-auto" style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+            }}>
                 <a href="#home" className="text-3xl font-bold gold-gradient flex items-center gap-6" style={{
                     fontSize: '2rem',
                     fontWeight: 'bold',
@@ -36,7 +40,11 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-8" style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '2rem'
+                }}>
                     {navLinks.map((link) => (
                         <a 
                             key={link.name} 
@@ -69,7 +77,12 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full glass-morphism p-8 flex flex-col items-center gap-6">
+                <div className="md:hidden absolute top-full left-0 w-full glass-morphism p-8 flex flex-col items-center gap-6" style={{
+                    padding: '2rem',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    display: 'flex'
+                }}>
                     {navLinks.map((link) => (
                         <a 
                             key={link.name} 
