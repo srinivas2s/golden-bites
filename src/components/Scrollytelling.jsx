@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Scrollytelling = () => {
     const scrollyRef = useRef(null);
@@ -10,6 +13,7 @@ const Scrollytelling = () => {
         const panels = gsap.utils.toArray('.scrolly-panel');
         if (panels.length === 0) return;
         
+        // Define the horizontal scroll animation
         const mainTl = gsap.to(panels, {
             xPercent: -100 * (panels.length - 1),
             ease: 'none',
@@ -17,34 +21,46 @@ const Scrollytelling = () => {
                 trigger: scrollyRef.current,
                 pin: true,
                 scrub: 1,
-                end: () => "+=" + (scrollyRef.current?.offsetWidth || window.innerWidth)
+                start: 'top top',
+                // Adjust scroll length based on number of panels
+                end: () => `+=${scrollyRef.current.offsetWidth * (panels.length - 1)}`,
+                invalidateOnRefresh: true,
             }
         });
 
+        // Child animations synchronized with the main horizontal scroll
         panels.forEach((panel) => {
-            gsap.fromTo(panel.querySelector('.panel-content'), 
-                { y: 50, opacity: 0 }, 
-                { 
-                    y: 0, 
-                    opacity: 1, 
-                    duration: 1, 
-                    scrollTrigger: {
-                        trigger: panel,
-                        containerAnimation: gsap.to(panels, { xPercent: -100 * (panels.length - 1), paused: true }), // Simplified for logic check
-                        start: 'left center',
-                        toggleActions: 'play none none reverse',
+            const content = panel.querySelector('.panel-content');
+            if (content) {
+                gsap.fromTo(content, 
+                    { y: 50, opacity: 0, scale: 0.9 }, 
+                    { 
+                        y: 0, 
+                        opacity: 1, 
+                        scale: 1,
+                        duration: 1, 
+                        scrollTrigger: {
+                            trigger: panel,
+                            containerAnimation: mainTl,
+                            start: 'left center',
+                            toggleActions: 'play none none reverse',
+                        }
                     }
-                }
-            );
+                );
+            }
         });
 
+        return () => {
+            mainTl.kill();
+            ScrollTrigger.getAll().forEach(t => t.kill());
+        };
     }, []);
 
     const values = [
-        { title: 'Fresh Ingredients', desc: 'Sourced daily from local organic farms.', icon: '🌱' },
-        { title: 'Expert Roasting', desc: 'Crafted in small batches for peak flavor.', icon: '☕' },
-        { title: 'Cozy Ambience', desc: 'Designed for comfort and conversation.', icon: '🕯️' },
-        { title: 'Perfect Moments', desc: 'Where every visit feels special.', icon: '✨' },
+        { title: 'Fresh Ingredients', desc: 'Sourced daily from local organic farms.' },
+        { title: 'Expert Roasting', desc: 'Crafted in small batches for peak flavor.' },
+        { title: 'Cozy Ambience', desc: 'Designed for comfort and conversation.' },
+        { title: 'Perfect Moments', desc: 'Where every visit feels special.' },
     ];
 
     return (
