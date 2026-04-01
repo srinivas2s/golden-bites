@@ -27,14 +27,14 @@ const Navbar = () => {
                 justifyContent: 'space-between',
                 alignItems: 'center'
             }}>
-                <a href="#home" className="text-2xl font-bold gold-gradient flex items-center gap-4" style={{
-                    fontSize: '1.5rem',
+                <a href="#home" className="text-3xl font-bold gold-gradient flex items-center gap-6" style={{
+                    fontSize: '2rem',
                     fontWeight: 'bold',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '1rem'
+                    gap: '1.5rem'
                 }}>
-                    <img src="/src/assets/logo.png" alt="Golden Bites Logo" className="w-12 h-12 object-contain" style={{ width: '3rem', height: '3rem', objectFit: 'contain' }} />
+                    <img src="/src/assets/logo.png" alt="Golden Bites Logo" className="w-24 h-24 object-contain" style={{ width: '6rem', height: '6rem', objectFit: 'contain' }} />
                     <span className="hidden sm:block">GOLDEN BITES</span>
                 </a>
 

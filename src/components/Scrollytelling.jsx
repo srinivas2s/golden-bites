@@ -91,7 +91,7 @@ const Scrollytelling = () => {
                         }}
                     >
                         <div className="panel-content text-center max-w-4xl" style={{ textAlign: 'center', maxWidth: '56rem' }}>
-                            <div className="text-8xl mb-12" style={{ fontSize: '7rem', marginBottom: '3rem' }}>{v.icon}</div>
+                            {v.icon && <div className="text-8xl mb-12" style={{ fontSize: '7rem', marginBottom: '3rem' }}>{v.icon}</div>}
                             <h2 className="text-7xl md:text-9xl mb-10" style={{ fontSize: 'max(4rem, 8vw)', marginBottom: '2.5rem' }}>
                                 <span className="gold-gradient">{v.title}</span>
                             </h2>

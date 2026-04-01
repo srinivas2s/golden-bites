@@ -48,4 +48,7 @@ To run this project locally, ensure you have Node.js installed, then follow thes
 This project was built for **Golden Bites** as part of a high-end freelance client delivery. The final result is optimized for performance, accessibility, and visual impact.
 
 ---
+Designed and developed by **Srinivas**
+[Contact on WhatsApp](https://wa.me/918792151311) | [Email](mailto:srinivas2006srini.@gmail.com)
+
 Copyright 2024 Golden Bites. All rights reserved.

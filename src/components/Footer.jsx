@@ -56,13 +56,18 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-12 border-t border-border/10 flex flex-col md:flex-row justify-between items-center gap-8" style={{ borderTop: '1px solid rgba(255, 184, 0, 0.05)', paddingTop: '3rem', display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className="pt-12 border-t border-border/10 flex flex-col items-center gap-6" style={{ borderTop: '1px solid rgba(255, 184, 0, 0.05)', paddingTop: '3rem', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center', textAlign: 'center' }}>
                     <p className="text-text-muted text-sm" style={{ fontSize: '0.875rem', color: '#a3a3a3' }}>
-                        © 2024 Golden Bites. All Rights Reserved.
+                        © 2026 Golden Bites. All Rights Reserved.
                     </p>
-                    <p className="text-text-muted text-sm flex items-center gap-2" style={{ fontSize: '0.875rem', color: '#a3a3a3', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        Made with <span className="text-primary" style={{ color: '#FFB800' }}>❤️</span> for coffee lovers.
-                    </p>
+                    <div className="flex flex-col items-center gap-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                        <p className="text-text-muted text-sm" style={{ fontSize: '0.9rem', color: '#a3a3a3' }}>
+                            Designed and developed by <a href="https://wa.me/918792151311" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold" style={{ color: '#FFB800', fontWeight: 'bold' }}>Srinivas</a>
+                        </p>
+                        <a href="mailto:srinivas2006srini.@gmail.com" className="text-text-muted text-xs hover:text-primary transition-colors" style={{ fontSize: '0.8rem', color: '#737373', transition: 'color 0.3s' }}>
+                            srinivas2006srini.@gmail.com
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
