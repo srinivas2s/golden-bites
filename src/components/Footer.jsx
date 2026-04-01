@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-black pt-32 pb-12 border-t border-border/10" style={{ backgroundColor: '#000', paddingTop: '8rem', paddingBottom: '3rem', borderTop: '1px solid rgba(255, 184, 0, 0.05)' }}>
             <div className="container" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', padding: '0 2rem' }}>
-                <div className="grid md:grid-cols-4 gap-16 mb-20" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '4rem', marginBottom: '5rem' }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-16 mb-12 md:mb-20">
                     
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

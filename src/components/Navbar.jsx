@@ -35,7 +35,7 @@ const Navbar = () => {
                     alignItems: 'center',
                     gap: '1.5rem'
                 }}>
-                    <img src={logoImg} alt="Golden Bites Logo" className="w-24 h-24 object-contain" style={{ width: '6rem', height: '6rem', objectFit: 'contain' }} />
+                    <img src={logoImg} alt="Golden Bites Logo" className="w-24 h-24 object-contain logo-img" style={{ width: '6rem', height: '6rem', objectFit: 'contain' }} />
                     <span className="hidden sm:block">GOLDEN BITES</span>
                 </a>
 

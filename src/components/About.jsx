@@ -33,12 +33,7 @@ const About = () => {
             padding: '100px 0',
             overflow: 'hidden'
         }}>
-            <div className="container grid md:grid-cols-2 gap-20 items-center" style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '5rem',
-                alignItems: 'center'
-            }}>
+            <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
                 <div ref={contentRef}>
                     <span className="subtitle">Our Story</span>
                     <h2 className="text-5xl mb-8" style={{ fontSize: '3.5rem', lineHeight: 1.2 }}>Crafting the <span className="gold-gradient">Golden Standard.</span></h2>
