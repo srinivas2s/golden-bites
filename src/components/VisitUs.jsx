@@ -22,7 +22,7 @@ const VisitUs = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-bold mb-2 uppercase tracking-widest text-primary" style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Our Location</h4>
-                                    <p className="text-lg text-text-muted" style={{ fontSize: '1.125rem', color: '#a3a3a3' }}>123 Golden Street, Artisan District<br/>New York, NY 10001</p>
+                                    <p className="text-lg text-text-muted" style={{ fontSize: '1.125rem', color: '#a3a3a3' }}>2955/3, Gokulam Main Rd, Gokulam 2nd Stage,<br/>Vani Vilas Mohalla, Mysuru, Karnataka 570002</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-8" style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
@@ -40,11 +40,17 @@ const VisitUs = () => {
                                 </div>
                                 <div className="w-full">
                                     <h4 className="text-xl font-bold mb-2 uppercase tracking-widest text-primary" style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Get In Touch</h4>
-                                    <p className="text-lg text-text-muted mb-6" style={{ fontSize: '1.125rem', color: '#a3a3a3' }}>+1 (234) 567-890</p>
-                                    <button className="w-full py-4 bg-primary text-secondary font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition-all shadow-xl" style={{ width: '100%', padding: '1rem', backgroundColor: '#FFB800', color: '#000', borderRadius: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
+                                    <p className="text-lg text-text-muted mb-6" style={{ fontSize: '1.125rem', color: '#a3a3a3' }}>+91 87921 51311</p>
+                                    <a 
+                                        href="https://wa.me/918792151311"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-full py-4 bg-primary text-secondary font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition-all shadow-xl" 
+                                        style={{ width: '100%', padding: '1rem', backgroundColor: '#FFB800', color: '#000', borderRadius: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', textDecoration: 'none' }}
+                                    >
                                         <MessageSquare size={20} />
                                         Chat on WhatsApp
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
