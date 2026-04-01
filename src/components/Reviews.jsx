@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 const Reviews = () => {
     const reviews = [
-        { name: 'Sarah J.', text: 'Best coffee in town! The atmosphere is so cozy.', rating: 5 },
-        { name: 'David M.', text: 'Their croissants are to die for. Golden bites indeed.', rating: 5 },
-        { name: 'Elena R.', text: 'A perfect spot for both work and chilling with friends.', rating: 4 },
+        { name: 'Sameer K.', text: 'Best Shawarma in town! The chicken is so tender and the tahini is authentic.', rating: 5 },
+        { name: 'Arjun R.', text: 'Their Alfaham is cooked to perfection. A true golden experience for meat lovers.', rating: 5 },
+        { name: 'Nisha S.', text: 'The secret spices really make a difference. Best non-veg spot in Mysuru.', rating: 5 },
     ];
 
     return (

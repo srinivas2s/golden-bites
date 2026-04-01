@@ -43,10 +43,10 @@ const About = () => {
                     <span className="subtitle">Our Story</span>
                     <h2 className="text-5xl mb-8" style={{ fontSize: '3.5rem', lineHeight: 1.2 }}>Crafting the <span className="gold-gradient">Golden Standard.</span></h2>
                     <p className="text-lg text-text-muted mb-6" style={{ fontSize: '1.2rem', color: '#a3a3a3', marginBottom: '1.5rem' }}>
-                        At Golden Bites, we believe that coffee is more than just a drink — it's an experience. Founded in 2024, our cafe was born from a passion for premium craftsmanship and the simple joy of a perfectly brewed cup.
+                        At Golden Bites, we believe that great food is an art form. Founded in 2024, our cafe was born from a passion for authentic charcoal grilling and the pursuit of the perfect, juice-dripping Shawarma that Mysuru has been waiting for.
                     </p>
                     <p className="text-lg text-text-muted mb-10" style={{ fontSize: '1.2rem', color: '#a3a3a3', marginBottom: '2.5rem' }}>
-                        Every bean is ethically sourced, every pastry is handcrafted daily, and every moment in our space is designed to make you feel right at home. Join us in our journey of flavor, community, and the golden bites of life.
+                        Every piece of chicken is hand-selected and marinated in our secret heritage spices for 48 hours. From the smoky aroma of our Alfaham to the perfect wrap of our signature Shawarma, we bring you the golden standard of non-veg delicacies.
                     </p>
                     <div className="grid grid-cols-2 gap-8 border-t border-border pt-10" style={{
                         display: 'grid',
@@ -57,11 +57,11 @@ const About = () => {
                     }}>
                         <div>
                             <h4 className="text-3xl text-primary font-bold mb-1" style={{ color: '#FFB800', fontSize: '1.875rem' }}>100%</h4>
-                            <p className="text-sm uppercase tracking-widest text-text-muted" style={{ fontSize: '0.75rem', letterSpacing: '0.1rem' }}>Organic Arabica</p>
+                            <p className="text-sm uppercase tracking-widest text-text-muted" style={{ fontSize: '0.75rem', letterSpacing: '0.1rem' }}>Fire-Grilled</p>
                         </div>
                         <div>
-                            <h4 className="text-3xl text-primary font-bold mb-1" style={{ color: '#FFB800', fontSize: '1.875rem' }}>24/7</h4>
-                            <p className="text-sm uppercase tracking-widest text-text-muted" style={{ fontSize: '0.75rem', letterSpacing: '0.1rem' }}>Freshly Baked</p>
+                            <h4 className="text-3xl text-primary font-bold mb-1" style={{ color: '#FFB800', fontSize: '1.875rem' }}>Secret</h4>
+                            <p className="text-sm uppercase tracking-widest text-text-muted" style={{ fontSize: '0.75rem', letterSpacing: '0.1rem' }}>Spice Heritage</p>
                         </div>
                     </div>
                 </div>
@@ -76,8 +76,8 @@ const About = () => {
                         zIndex: -1
                     }} />
                     <img 
-                        src="/src/assets/latte_art_closeup.png" 
-                        alt="Coffee Experience" 
+                        src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80" 
+                        alt="Shawarma Experience" 
                         className="w-full h-auto rounded-xl shadow-2xl object-cover hover:scale-105 transition-transform duration-700"
                         style={{
                             width: '100%',

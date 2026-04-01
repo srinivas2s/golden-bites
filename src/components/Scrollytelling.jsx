@@ -57,10 +57,10 @@ const Scrollytelling = () => {
     }, []);
 
     const values = [
-        { title: 'Fresh Ingredients', desc: 'Sourced daily from local organic farms.' },
-        { title: 'Expert Roasting', desc: 'Crafted in small batches for peak flavor.' },
-        { title: 'Cozy Ambience', desc: 'Designed for comfort and conversation.' },
-        { title: 'Perfect Moments', desc: 'Where every visit feels special.' },
+        { title: 'Authentic Fire-Grill', desc: 'Experience the true essence of charcoal grilling with our signature Alfaham and BBQ specials.' },
+        { title: 'Secret Spice Heritage', desc: 'Our Shawarma is marinated in a 48-hour secret spice blend that brings a "Golden" touch to every bite.' },
+        { title: 'Premium Tender Chicken', desc: 'We source only the finest, farm-fresh chicken daily to ensure every bite is juicy and flavorful.' },
+        { title: 'Mysuru\'s Favorite', desc: 'The ultimate destination for foodies seeking the best Shawarma in the heart of Gokulam.' },
     ];
 
     return (

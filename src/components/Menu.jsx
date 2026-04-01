@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Menu = () => {
-    const categories = ['All', 'Coffee', 'Tea', 'Snacks', 'Desserts', 'Specials'];
+    const categories = ['All', 'Shawarma', 'Grill', 'Burgers', 'Sides', 'Beverages'];
     const [activeCategory, setActiveCategory] = useState('All');
 
     const menuItems = [
-        { id: 1, name: 'Golden Latte', price: '$5.50', category: 'Coffee', desc: 'Turmeric infused with oat milk.' },
-        { id: 2, name: 'Artisan Croissant', price: '$4.25', category: 'Snacks', desc: 'Flaky layers of pure butter.' },
-        { id: 3, name: 'Matcha Bliss', price: '$6.00', category: 'Tea', desc: 'Premium grade Japanese matcha.' },
-        { id: 4, name: 'Gold Leaf Brownie', price: '$7.50', category: 'Desserts', desc: 'Dark chocolate with edible gold.' },
-        { id: 5, name: 'Flat White', price: '$4.50', category: 'Coffee', desc: 'Smooth velvety microfoam.' },
-        { id: 6, name: 'Golden Chai', price: '$5.00', category: 'Tea', desc: 'House spiced black tea.' },
+        { id: 1, name: 'Classic Chicken Shawarma', price: '₹120', category: 'Shawarma', desc: 'Slow-roasted chicken, garlic tahini, and fresh pickles.' },
+        { id: 2, name: 'Special Plate Shawarma', price: '₹180', category: 'Shawarma', desc: 'Open shawarma served with extra meat, salad, and khubz.' },
+        { id: 3, name: 'Alfaham Chicken (Full)', price: '₹480', category: 'Grill', desc: 'Traditional charcoal-grilled chicken with Arabian spices.' },
+        { id: 4, name: 'Pepper BBQ Grill', price: '₹260', category: 'Grill', desc: 'Sizzling grill infused with crushed black pepper and honey.' },
+        { id: 5, name: 'Mexican Spicy Shawarma', price: '₹140', category: 'Shawarma', desc: 'Spicy twist with jalapeños and chipotle sauce.' },
+        { id: 6, name: 'Zinger Burst Burger', price: '₹150', category: 'Burgers', desc: 'Crispy chicken fillet with secret golden sauce.' },
+        { id: 7, name: 'Golden Special Platter', price: '₹850', category: 'Grill', desc: 'A massive selection of all our best grills and shawarmas.' },
+        { id: 8, name: 'Peri Peri Fries', price: '₹90', category: 'Sides', desc: 'Crispy fries tossed in spicy peri-peri seasoning.' },
+        { id: 9, name: 'Cold Coffee with Ice Cream', price: '₹110', category: 'Beverages', desc: 'Creamy blend of premium coffee and vanilla.' },
     ];
 
     const filteredItems = activeCategory === 'All' 

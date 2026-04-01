@@ -56,7 +56,7 @@ const Hero = () => {
                     width: '100%',
                     height: '120%',
                     zIndex: -1,
-                    background: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url("/src/assets/hero_cafe_warm_interior.png") center/cover no-repeat',
+                    background: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1633321702518-7feccaf0ad44?auto=format&fit=crop&q=80") center/cover no-repeat',
                 }}
             />
 
@@ -80,13 +80,13 @@ const Hero = () => {
                         lineHeight: 1.1
                     }}
                 >
-                    Where Every Bite<br/>
+                    Taste the Flame,<br/>
                     <span className="gold-gradient" style={{
                         background: 'linear-gradient(45deg, #FFB800, #FDF5E6, #FFB800)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         backgroundSize: '200% auto'
-                    }}>Feels Golden.</span>
+                    }}>Savor the Gold.</span>
                 </h1>
                 <p 
                     ref={textRef}
@@ -98,7 +98,7 @@ const Hero = () => {
                         color: '#a3a3a3'
                     }}
                 >
-                    Experience the art of artisanal coffee and handcrafted bites in an atmosphere crafted for moments that matter.
+                    Mysuru's ultimate destination for authentic fire-grilled delicacies and our world-famous signature Shawarma.
                 </p>
                 <div className="flex flex-col md:flex-row gap-6 justify-center" style={{
                     display: 'flex',
