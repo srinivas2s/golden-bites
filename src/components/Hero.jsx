@@ -56,7 +56,7 @@ const Hero = () => {
                     width: '100%',
                     height: '120%',
                     zIndex: -1,
-                    background: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1633321702518-7feccaf0ad44?auto=format&fit=crop&q=80") center/cover no-repeat',
+                    background: 'radial-gradient(ellipse at 50% 0%, rgba(255, 184, 0, 0.08) 0%, transparent 60%), #050505',
                 }}
             />
 
@@ -107,10 +107,10 @@ const Hero = () => {
                 }}>
                     <a 
                         href="#menu" 
-                        className="px-10 py-4 bg-primary text-secondary font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-xl"
+                        className="px-10 py-4 border border-primary text-primary font-bold rounded-full hover:bg-glass hover:text-white transition-all duration-300"
                         style={{
-                            backgroundColor: '#FFB800',
-                            color: '#000',
+                            border: '1px solid #FFB800',
+                            color: '#FFB800',
                             padding: '1rem 2.5rem',
                             borderRadius: '9999px',
                             fontWeight: 'bold'
@@ -134,27 +134,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div 
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2 opacity-60" 
-                style={{
-                    position: 'absolute',
-                    bottom: '2.5rem',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                }}
-            >
-                <div className="w-[1px] h-20 bg-gradient-to-b from-primary to-transparent" style={{
-                    width: '1px',
-                    height: '5rem',
-                    background: 'linear-gradient(to bottom, #FFB800, transparent)'
-                }} />
-                <span className="text-[10px] uppercase tracking-widest" style={{ fontSize: '0.625rem', letterSpacing: '0.2rem' }}>Scroll</span>
-            </div>
         </section>
     );
 };
