@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter, Coffee } from 'lucide-react';
+import { Instagram, Twitter, Flame } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -10,11 +10,11 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         <a href="#home" className="text-3xl font-bold flex items-center gap-3 gold-gradient" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontWeight: 'bold', fontSize: '1.875rem' }}>
-                            <Coffee className="w-10 h-10 text-primary" color="#FFB800" />
+                            <Flame className="w-10 h-10 text-primary" color="#FFB800" />
                             <span>GOLDEN BITES</span>
                         </a>
                         <p className="text-text-muted mt-6 text-lg" style={{ color: '#a3a3a3', fontSize: '1.125rem' }}>
-                            Elevating the cafe experience with golden moments and premium bites. 
+                            Elevating the dining experience with golden flavors and premium bites. 
                         </p>
                     </div>
 
@@ -22,7 +22,7 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold text-white mb-8 text-xl uppercase tracking-widest border-b border-primary/20 pb-4 inline-block" style={{ fontWeight: 'bold', borderBottom: '1px solid rgba(255, 184, 0, 0.2)', paddingBottom: '1rem', marginBottom: '2rem', display: 'inline-block' }}>Explore</h4>
                         <ul className="space-y-4" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                            <li><a href="#home" className="text-text-muted hover:text-primary transition-colors">Our Coffee</a></li>
+                            <li><a href="#home" className="text-text-muted hover:text-primary transition-colors">Our Specials</a></li>
                             <li><a href="#menu" className="text-text-muted hover:text-primary transition-colors">Signature Menu</a></li>
                             <li><a href="#experience" className="text-text-muted hover:text-primary transition-colors">Experience</a></li>
                         </ul>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 <Instagram size={24} />
                             </a>
                             <a href="#" className="p-4 bg-primary/10 rounded-full hover:bg-primary hover:text-secondary transition-all" style={{ padding: '1rem', backgroundColor: 'rgba(255, 184, 0, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <Coffee size={24} />
+                                <Flame size={24} />
                             </a>
                             <a href="#" className="p-4 bg-primary/10 rounded-full hover:bg-primary hover:text-secondary transition-all" style={{ padding: '1rem', backgroundColor: 'rgba(255, 184, 0, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <Twitter size={24} />
